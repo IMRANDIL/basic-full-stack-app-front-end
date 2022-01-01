@@ -31,7 +31,7 @@ function App() {
 
           <div style={{ padding: '20px' }}>
             {name}
-            <span style={{ margin: '15px' }}>{price}Rupees</span>
+            <span style={{ margin: '15px' }}>{price}_Rupees</span>
           </div>
 
         </div>
