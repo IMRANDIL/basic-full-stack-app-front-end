@@ -8,7 +8,7 @@ function App() {
 
     getProducts()
 
-  }, [])
+  }, [products])
 
 
   const getProducts = async () => {
@@ -27,9 +27,9 @@ function App() {
     <div className="App">
       <h1 >Basic_full_Stack_App</h1>
       {products.map(({ product_id, name, price }) => {
-        return <div key={product_id} >
+        return <div key={product_id} style={{ background: 'red', color: 'white' }}>
 
-          <div style={{ padding: '30px' }}>
+          <div style={{ padding: '20px' }}>
             {name}
             <span style={{ margin: '15px' }}>{price}Rupees</span>
           </div>
